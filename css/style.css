@@ -305,7 +305,7 @@ section h2 {
 
 .project-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 60px;
     align-items: center;
     background-color: var(--bg-card);
