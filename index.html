@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirko Aloia — Junior .NET Developer Portfolio">
+    <title>Mirko Aloia</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- GSAP (libreria animazioni) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <!-- Il nostro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGAZIONE -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">MA</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">.NET Developer & Analyst</p>
+            <h1 class="hero-title">Mirko<br>Aloia</h1>
+            <p class="hero-subtitle">Done is better than perfect —<br>but I always end up making it beautiful anyway.</p>
+            <a href="#projects" class="btn-primary">Explore my projects</a>
+        </div>
+    </section>
+
+    <!-- CHI SONO -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/img/profile.jpeg" alt="Mirko Aloia">
+                </div>
+                <div class="about-text">
+                    <span class="section-label">About me</span>
+                    <h2>A developer with<br>the mindset of a builder.</h2>
+                    <p>I'm a .NET Developer & Analyst with a genuine obsession for growth — technical, personal, and professional. I don't settle. Every project is a chance to do better than before, and I treat that seriously.</p>
+                    <p>My goal isn't just to write code that works. It's to understand the why behind every decision, collaborate effectively with the team, and deliver real value. I'm building toward a future as an Analyst Developer, with a long-term vision that goes well beyond writing code.</p>
+                    <p>I've already had the chance to take full ownership of a project — from concept to production. That kind of responsibility doesn't intimidate me. It drives me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <span class="section-label">Skills</span>
+        <h2>My tech stack.</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Backend</h3>
+                <p>C# · .NET / ASP.NET Core · Entity Framework Core</p>
+            </div>
+            <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Frontend</h3>
+                <p>HTML & CSS · Bootstrap</p>
+            </div>
+            <div class="skill-card">
+                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" stroke="#2563eb" stroke-width="1.5"/>
+                    <path d="M3 5v14c0 1.657 4.029 3 9 3s9-1.343 9-3V5" stroke="#2563eb" stroke-width="1.5"/>
+                    <path d="M3 12c0 1.657 4.029 3 9 3s9-1.343 9-3" stroke="#2563eb" stroke-width="1.5"/>
+                </svg>
+                <h3>Database</h3>
+                <p>PostgreSQL · SQL</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- PROGETTI -->
+<section id="projects">
+    <div class="container">
+        <span class="section-label">Projects</span>
+        <h2>What I've built.</h2>
+        <div class="project-card">
+            <div class="project-info">
+                <span class="project-tag">Blazor WebApp · .NET 8 · PostgreSQL · Azure AD</span>
+                <h3>Asset Management System</h3>
+                <p>Internal web application developed for Gruppo Intent to manage the full lifecycle of company technological assets — from assignment to return, with digital signature and complete tracking.</p>
+                <p>I contributed both as developer and project coordinator — bridging technical decisions, team communication, and product execution from day one.</p>
+                <p>The system integrates Microsoft 365 / Azure AD authentication with role-based access control across three levels. At its core, a fully autonomous workflow: every asset assignment or revocation triggers a personalized email containing a unique signing link. The employee signs directly on an HTML5 canvas — no login required — and QuestPDF automatically generates a branded PDF, delivered to both the employee and the administration.</p>
+                <ul class="project-features">
+                    <li>Microsoft 365 / Azure AD Authentication</li>
+                    <li>Role-based access control — SuperAdmin, Agent, User</li>
+                    <li>Automated email pipeline with unique signing link</li>
+                    <li>HTML5 canvas digital signature</li>
+                    <li>Automatic PDF generation via QuestPDF</li>
+                    <li>Excel import/export with validation</li>
+                    <li>Dashboard with asset statistics and charts</li>
+                </ul>
+            </div>
+            <div class="project-image">
+                <img src="assets/img/project.jpg" alt="Asset Management System">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FORMAZIONE -->
+<!-- FORMAZIONE -->
+<section id="experience">
+    <div class="container">
+        <span class="section-label">Education</span>
+        <h2>My path.</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-date">2025 — 2026</span>
+                <h3>Full-Stack .NET Development — Gruppo Intent</h3>
+                <p>12-month intensive training program covering object-oriented programming, C#, HTML, CSS, Blazor, MVC and the .NET ecosystem. The program evolved from remote fundamentals to hands-on in-person development, culminating in the design and full delivery of a production-ready web application — built and coordinated end to end.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CONTATTI -->
+    <section id="contact">
+        <div class="container">
+            <span class="section-label">Contact</span>
+            <h2>Let's talk.</h2>
+            <p class="contact-sub">I'm open to new opportunities. Reach out by email or connect on LinkedIn.</p>
+            <div class="contact-links">
+                <a href="mailto:mirkoaloia99@gmail.com" class="btn-primary">Write me an email</a>
+                <a href="https://www.linkedin.com/in/mirko-aloia-62b5173aa" target="_blank" class="btn-secondary">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">MA</span>
+                <p class="footer-copy">© 2026 Mirko Aloia. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="mailto:mirkoaloia99@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/mirko-aloia-62b5173aa" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Il nostro JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
